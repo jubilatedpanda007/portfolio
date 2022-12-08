@@ -95,8 +95,11 @@
 <!-- Navbar -->
 
   <!-- CITATION: Header from https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 -->
-
-
+  <!-- import index.js in this directory -->
+  <script src="index.js"></script>
+  <!-- CITATION: https://codepen.io/MiguelCodes/pen/XWdedmw -->
+<div id="progressBar"></div>
+<div id="progressBarContainer"></div>
 
   <div class="container py-4">
 
@@ -134,7 +137,7 @@
         <div class="row mt-3 mb-3">
           <div class="col-md-6">
             <h3 class="pb-2 mb-2">
-              About
+              <span class="subheader">About</span>
             </h3>
             <p>I'm a Junior at Brown University interested in computer science, mathematics, machine learning and the connections between them. I also collect & resell sneakers online.</p>
             <p>I make modern, fast and responsive websites, and I aspire to make web and mobile applications. My framework (weapon 😈) of choice for the web is React, which I combine with the MERN stack. I also find machine learning and AI interesting, and am learning about the subject with PyTorch.</p>
@@ -147,7 +150,7 @@
         <div class="row mt-3 mb-3">
           <div class="col-md-12">
             <h3 class="pb-2 mb-3">
-              Projects
+              <span class="subheader">Projects</span>
             </h3>
           </div>
           <!-- Four Cards, each 6 cols each -->
@@ -159,7 +162,13 @@
               <div class="card-body">
                 <h3 class="card-title">Pokémon Evolution</h3>
                 <p class="card-text">A Pokédex is a device that allows you to search for Pokémon and view their stats. I made a toy-sized Pokédex using the PokéAPI!</p>
-                <a href="https://jubilatedpanda007.github.io/development/" target="_blank" class="btn btn-primary gradient-btn">Let's See It!</a>
+                <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+                <div class="text-center text-lg-start mb-3">
+                  <a href="https://jubilatedpanda007.github.io/development/" target="_blank"  class="onwards scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Let's See It!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -172,7 +181,13 @@
               <div class="card-body">
                 <h3 class="card-title">Hacker News Redesign</h3>
                 <p class="card-text">Hacker News is a website that aggregates news stories about technology and startups. I redesigned the website to be more modern and user-friendly.</p>
-                <a href="https://jubilatedpanda007.github.io/development/" target="_blank" class="btn btn-primary gradient-btn">Take Me There!</a>
+                <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+                <div class="text-center text-lg-start mb-3">
+                  <a href="https://jubilatedpanda007.github.io/development/" target="_blank"  class="onwards scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Take Me There!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -186,7 +201,13 @@
               <div class="card-body">
                 <h3 class="card-title" id="orca">Orca App Concept</h3>
                 <p class="card-text">For this project, we were tasked with taking an existing startup and creating a design that serves their goal. We chose Orca, a startup founded in 2021 based out of UT Austin.</p>
-                <a href="https://jubilatedpanda007.github.io/iterative/" target="_blank" class="btn btn-primary gradient-btn">Check It Out!</a>
+                <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+                <div class="text-center text-lg-start mb-3">
+                  <a href="https://jubilatedpanda007.github.io/iterative/" target="_blank" class="onwards scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Check It Out!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -199,633 +220,142 @@
               <div class="card-body">
                 <h3 class="card-title">Brown Marketplace</h3>
                 <p class="card-text">Brown Marketplace is a website that allows students to buy and sell items to other students. I made a redesign of the website to be more modern and user-friendly.</p>
-                <a href="https://brown-marketplace.vercel.app/" target="_blank" class="btn btn-primary gradient-btn">Ooo Show Me More!</a>
-              </div>
-            </div>
-          </div>
-
-          
-
-        </div>
-
-
-
-        <h3 class="pb-4 mb-4 border-bottom">
-          Introduction
-        </h3>
-
-        <!-- Add site-screenshot on Left in Rounded Image and then on right a description of website, below that is a fun fact that is expandable -->
-        <div class="row">
-          <div class="col-md-6 col-6">
-            <!-- make clicking image open site, on hover make it expand -->
-            <a href="https://www.ycombinator.com/companies/orca">
-              <img class="site img-fluid" src="site-screenshot.png" alt="Orca YC Page">
-            </a>
-          </div>
-          <div class="col-md-6 col-6">
-            <h4 class="pb-2 mb-2"><b>Orca</b></h4>
-            <p> For this project, we were tasked with taking an
-              existing startup and creating a design that serves their goal. We chose <a
-                href="https://www.ycombinator.com/companies/orca">Orca</a>, a startup founded in 2021 based out of UT Austin.
-              Orca describes themselves as “Banking for Gen Z, on steroids.” Orca boasts of features like:
-              the ability to spend money instantly, <b>split the bill</b> with a group, local perks and discounts,
-              and spend and save capabilities. Orca is trying to be the only financial hub that a Gen Z might need.</p>
-
-            <h5><b>Our version</b></h5>
-            <p>Because of Gen Z's need for instantaneous information and their tendency to have their phones with
-              them at all times, we decided to design a mobile app for Orca. We decided to incorporate all of their
-              desired features.</p>
-
-            <p>As Orca is pointed towards Gen Z, they are the users likely to be impacted by our app. We included
-              elements similar to Venmo and
-              Snackpass, two apps popular among Gen Z, to give a sense of familiarity for the users. We think older users will still be able 
-              to user the app, but won't pick up on the familiarity and structure of the our app.</p>
-
-          </div>
-        </div>
-
-        <!-- Create a new section titled sketches and then add the sketches-->
-        <div class="row">
-          <div class="col-md-12">
-            <h3 id="sketches" class="pb-4 mb-4 border-bottom">
-              Sketches
-            </h3>
-            <p>In this phase, our group split up and created our own sketches. We wanted to let the creativity to flow and to
-              have as broad as a discussion as possible, so we took the concept of Orca, drew sketches of what we personally thought
-              would meet the goals of Orca, and covened afterwards for discussion.
-            </p> 
-
-            <p>Here are our various sketches! <b>Click on any sketch to enlarge it and view it in more detail!</b></p>
-
-          <!-- Modal Image Gallary Citation: https://trvswgnr.github.io/bs5-lightbox/ -->
-          <div class="row">
-            <a href="s1_1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s1_1.jpg" class="img-fluid site">
-            </a>
-            <a href="s1_2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s1_2.jpg" class="img-fluid site">
-            </a>
-            <a href="s1_3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s1_3.jpg" class="img-fluid site">
-            </a>
-          </div>
-
-          <div class="row mt-4">
-            <a href="s2_1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s2_1.jpg" class="img-fluid site">
-            </a>
-            <a href="s2_2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s2_2.jpg" class="img-fluid site">
-            </a>
-            <a href="s2_3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s2_3.jpg" class="img-fluid site">
-            </a>
-          </div>
-
-          <div class="row mt-4">
-            <a href="s3_1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s3_1.png" class="img-fluid site">
-            </a>
-            <a href="s3_2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s3_2.png" class="img-fluid site">
-            </a>
-            <a href="s3_3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s3_3.png" class="img-fluid site">
-            </a>
-          </div>
-
-          <div class="row mt-4">
-            <a href="s4_1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s4_1.png" class="img-fluid site">
-            </a>
-            <a href="s4_2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s4_2.png" class="img-fluid site">
-            </a>
-            <a href="s4_3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="s4_3.png" class="img-fluid site">
-            </a>
-          </div>
-
-          <!-- Following our Discussion -->
-          <p>Following our discussion, we identified which features would be the most crucial for our app.</p>
-          <p>We determined that <b>splitting bills</b>, <b>keeping track of transactions</b>, <b>financial account integration</b>, and <b>the overall social aspect</b> are key. Check out the next section to see how this culminates in our final wireframes.</p>
-          </div>
-
-          
-          <div class="row">
-            <div class="col-md-12 mt-5">
-              <h3 id="lofi" class="pb-4 mb-4 border-bottom">
-                Final Wireframes
-              </h3>
-              <p>After our discussion, we compared our sketches and weighed the pros and cons of each approach. After we made our conclusions (highlighted in the sticky notes below), we created our final set of wireframes!</p>
-              <p>Below, <b>click any screen</b> to view an enlarged version and see our <b>design decisions and philosophy</b>!</p>
-            </div>
-
-
-          <!-- Modal Image Gallary Citation: https://trvswgnr.github.io/bs5-lightbox/ -->
-          <div class="row">
-            <a href="final_1.jpeg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="final_1.jpeg" class="img-fluid site">
-            </a>
-            <a href="final_2.jpeg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="final_2.jpeg" class="img-fluid site">
-            </a>
-            <a href="final_3.jpeg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="final_3.jpeg" class="img-fluid site">
-            </a>
-          </div>
-
-          <div class="row mt-4">
-            <a href="final_4.jpeg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="final_4.jpeg" class="img-fluid site">
-            </a>
-            <a href="final_5.jpeg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="final_5.jpeg" class="img-fluid site">
-            </a>
-            <a href="final_6.jpeg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="final_6.jpeg" class="img-fluid site">
-            </a>
-          </div>
-
-          <div class="row mt-4">
-            <a href="final_7.jpeg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-              <img src="final_7.jpeg" class="img-fluid site">
-            </a>
-          </div>
-
-
-          </div>
-
-      
-
-           
-
-          <div class="row">
-            <div class="col-md-12 mt-5">
-              <h3 class="pb-4 mb-4 border-bottom">
-                Hi-Fi Prototype
-              </h3>
-              <p>After making a LoFi prototype, we moved onto making our HiFi prototype in Figma. This prototype went through a few iterations
-                (especially after incorporating the feedback from studio).
-              </p>
-              <p>
-                Every major screen is <b>only, at most, two clicks away</b> from the home page. This is to ensure that the user can easily navigate
-                the app and find what they are looking for/perform the action they want to perform.
-              </P>
-              <p>
-                This keeps our User Journeys short and sweet, and the user can easily find what they are looking for.
-              </p>
-              <h3 class="mt-2 subheader">Screenshots</h3>
-              <p>Here are some screenshots of the final version!</p>
-            </div>
-
-            <div class="col-md">
-              <div class="accordion" id="hifi">
-                <div class="row d-flex">
-                  <div class="col-md-3">
-                    <img src="figma.png" class="figure-img img-fluid rounded" alt="home screen">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="figma2.png" class="figure-img img-fluid rounded" alt="split the check screen">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="figma3.png" class="figure-img img-fluid rounded" alt="transactions screen">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="figma4.png" class="figure-img img-fluid rounded" alt="send/request screen">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <h3 class="mt-5 subheader">Figma Prototype</h3>
-          <p>Below is the <b>Embedded Figma Prototype</b>! Be sure to <b>click the "expand arrows" in the top right to start playing around with it!</b></p>
-
-          <div class="row justify-content-center mt-3">
-            <!-- <div class="col-md-12"> -->
-              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="1050" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNqsZsyxxJxA0hLZh2XQWMx%2FOrca-App-Mockup-(Anonymous)%3Fnode-id%3D1%253A192%26starting-point-node-id%3D1%253A192" allowfullscreen></iframe>
-            <!-- </div> -->
-          </div>
-
-          <div class="row d-flex" style="justify-content: center; align-items: center;">
-            <div class="col-md-12 mt-5">
-              <h3 id="critiques" class="pb-4 mb-4 border-bottom">
-                Addressing Critiques of Hi-Fi Prototype
-              </h3>
-
-              <p>With our prototype in place, our team attended a Studio Session where other students critiqued our designs, and vice-versa.</p>
-              <p>Below are annotations on our Hi-Fi prototype including the prominent criques we received, and how we ammended them in our final prototype! <b>Click to get started</b>!</p>
-              
-
-              <div class="row mb-3">
-                <a href="high_fi_annotation_one.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-                  <img src="high_fi_annotation_one.jpg" class="img-fluid site">
-                </a>
-                <a href="high_fi_annotation_two.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-                  <img src="high_fi_annotation_two.jpg" class="img-fluid site">
-                </a>
-                <a href="high_fi_annotation_three.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-                  <img src="high_fi_annotation_three.jpg" class="img-fluid site">
-                  <a href="high_fi_annotation_four.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
-                    <img src="high_fi_annotation_four.jpg" class="img-fluid site">
+                <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+                <div class="text-center text-lg-start mb-3">
+                  <a href="https://brown-marketplace.vercel.app/" target="_blank" class="onwards scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Ooo Show Me More!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
                   </a>
-                </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section, make a map with lines and circle icons -->
+        <!-- USSOCOM, Develop for Good, CS TA -->
+
+        <div class="row mt-3 mb-3">
+          <div class="col-md-12">
+            <h3 class="pb-2 mb-3">
+              <span class="subheader">Experiences</span>
+            </h3>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">USSOCOM</h3>
+                    <p class="card-text">I worked as a software developer for the United States Special Operations Command (USSOCOM) in Tampa, FL. I worked on a project that allowed the command to track and manage their projects.</p>
+                  </div>
+                </div>
               </div>
 
-              <p>Here are the <b>quick notes</b> we took during our Studio when receiving critiques. These are just for comphrensiveness sake and reference. Feel free to <b>click the button to continue to the next section</b>!</p>
-              <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
-              <div class="text-center text-lg-start mb-3">
-                <a href="#testing" class="onwards scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Onwards!</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">Develop for Good</h3>
+                    <p class="card-text">I worked as a software developer for Develop for Good, a nonprofit that helps nonprofits with their technology needs. I worked on a project that allowed the command to track and manage their projects.</p>
+                  </div>
+                </div>
               </div>
 
-              <div class="col" style="justify-content: center; align-items: center;">
-                <div class="accordion" id="lofi">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        #1 Feedback about "Split the Check"
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                      data-bs-parent="#lofi">
-                      <div class="accordion-body">
-                        <ul>
-                          <li>add a plus button to include the users</li>
-                          <li>fix punctuation and spacing inconsistencies</li>
-                          <li>positive reaction to having access to this feature in the header</li>
-                          <li>fixing margins on second screen</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        #2 Feedback about "Discounts"
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                      data-bs-parent="#lofi">
-                      <div class="accordion-body">
-                        <ul>
-                          <li>edit so that map takes up more of the screen</li>
-                          <li>screen is a bit too crowded</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        #3 Feedback about "Add Friends"
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                      data-bs-parent="#lofi">
-                      <div class="accordion-body">
-                        <ul>
-                          <li>add title to this page</li>
-                          <li>add button or other affordance to actually add friends</li>
-                          <li>it is currently a bit confusing what the purpose of this page is</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        #4 Feedback about home page
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                      data-bs-parent="#lofi">
-                      <div class="accordion-body">
-                        <ul>
-                          <li>add rings for “stories” so look more realistic</li>
-                          <li>story component is a good addition in terms of the social media aspect of the app</li>
-                          <li>make story circles larger</li>
-                          <li>get rid of dollar amount in friends' transactions section</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        #5 Other general feedback
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                      data-bs-parent="#lofi">
-                      <div class="accordion-body">
-                        <ul>
-                          <li>on "Discounts" page, add link back to home page </li>
-                          <li>color choice is very good</li>
-                          <li>fix inconsistencies with keyboard appearance between screens</li>
-                          <li>make sure everything is cenetered and/or evenly spaced</li>
-                        </ul>
-                      </div>
-                    </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title" id="cs">CS TA</h3>
+                    <p class="card-text">I worked as a teaching assistant for the Computer Science department at Brown University. I helped students with their homework and projects, and graded their assignments.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-12 mt-5">
-            <h3 id="testing" class="pb-4 mb-4 border-bottom">
-              User Testing
+        <!-- Skills, create sections for Programming Languages, Frameworks, Design as chips -->
+        <div class="row mt-3 mb-3">
+          <div class="col-md-12">
+            <h3 class="pb-2 mb-3">
+              <span class="subheader">Skills</span>
             </h3>
-
-            <h3 class="subheader">Task</h3>
-            <p>As a banking app built for Gen Z, one of Orca's most important features is splitting the bill with friends. This is a feature that existing apps such as Snackpass and Venmo do not have. With this in mind, we chose the following task for our user testing:</p>
-
-            <div class="card dark-bg">
-              <div class="card-body">
-                <p class="card-text">
-                  <b>Split the bill with Will!</b> Imagine you just had dinner with your friends and are trying to split the bill with them. You will use Orca, a banking app that allows you to send money and split bills with groups! You will follow instructions to complete your party and finish the check split! 
-                </p>
-                <p class="card-text">
-                  Please try to <b>think aloud</b> as you complete this task. We would love to hear your thought process! 
-                </p>
-                <p class="card-text">
-                  <b>Note:</b> This is NOT an actual website. It is an interactive mockup made on Figma, a prototyping software. Because of this, sometimes the buttons take a couple of clicks to work, and only some components are interactive. If you click on something that is not interactive, Figma will highlight the clickable areas in blue.
-                </p>
+          </div>
+          <!-- Programming Languages title, and chips for Python, JavaScript, Java -->
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="pb-2 mb-2">
+                  Programming Languages
+                </h4>
               </div>
-            </div>
-
-            <h3 class="subheader mt-4">Instructions</h3>
-
-            <div class="row mt-3">
-              <div class="col-md-4">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-1"></i></button>
-                    <!-- <h4>Step One</h4> -->
-                    <p class="card-text">
-                      Before you split the bill, you want to check how much you have already spent this month. Check your transactions for this month.
-                    </p>
-                  </div>
+              <div class="col-md-12">
+                <div class="chip">
+                  Python
                 </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-2"></i></button>
-                    <!-- <h4>Step Two</h4> -->
-                    <p class="card-text">
-                      You are within budget this month! Go to the Split the Check page screen to start.
-                    </p>
-                  </div>
+                <div class="chip">
+                  JavaScript
                 </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-3"></i></button>
-                    <!-- <h4>Step Three</h4> -->
-                    <p class="card-text">
-                      Look through your friends and add Kerstin K. to your party. Then go to the next page.
-                    </p>
-                  </div>
+                <div class="chip">
+                  Java
+                </div>
+                <div class="chip">
+                  C
+                </div>
+                <div class="chip">
+                  HTML
+                </div>
+                <div class="chip">
+                  CSS
+                </div>
+                <div class="chip">
+                  SQL
                 </div>
               </div>
             </div>
-
-            <div class="row mt-3">
-              <div class="col-md-4">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-4"></i></button>
-                    <!-- <h4>Step Four</h4> -->
-                    <p class="card-text">
-                      Assign Will S. to tacos. Then go to the next page.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-5"></i></button>
-                    <!-- <h4>Step Five</h4> -->
-                    <p class="card-text">
-                      Calculate the split and reach the confirmation page!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h3 class="subheader mt-4">Result</h3>
-            <p>Overall, the users completed the tasks successfully and found them straightforward. They liked the concept of splitting bills with friends and would consider using the app in real life. They particularly liked the Transactions page because it outlines their income and spendings for the month clearly.</p>
-
-            <h3 class="mt-4 subheader">Video Recordings</h3>
-            <p>Below are the videos of 3 users that completed this task from 
-              <a href="https://www.usertesting.com/" target="_blank">UserTesting.com</a>. <b>Click on any of the videos to view!</b>
-            </p>
 
             <div class="row">
-              <a href="https://www.youtube.com/watch?v=eyh3jN2oBTg" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
-                <img src="usertest1.jpeg" class="img-fluid site">
-              </a>
-              <a href="https://www.youtube.com/watch?v=iG6CbS3U2lI" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
-                <img src="usertest2.jpeg" class="img-fluid site">
-              </a>
-              <a href="https://www.youtube.com/watch?v=9lgwPJclZYg" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
-                <img src="usertest3.jpeg" class="img-fluid site">
-              </a>
-            </div>
-            
-            <h3 class="mt-4 subheader">Errors and Confusions</h3>
-
-            <!-- <div class="card mt-3">
-              <div class="card-body">
-                <h5 class="card-title">Errors and Confusions</h5>
-                <p class="card-text">Overall, the users completed the tasks successfully and found them straightforward. They said that the app was easy to use and that they would consider using it in real life.</p>
+              <div class="col-md-12">
+                <h4 class="pb-2 mb-2">
+                  Frameworks
+                </h4>
               </div>
-            </div> -->
-
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-                    <h4><b>When to move between pages?</b></h4>
-                    <p class="card-text">
-                      One user was confused about when to move from one page to the next. 
-                    </p>
-                    <p>
-                      <strong>Solution</strong>: <br> We could address this issue by adding more informative messages to better outline the flow of the app.
-                    </p>
-                  </div>
+              <div class="col-md-12">
+                <div class="chip">
+                  React
+                </div>
+                <div class="chip">
+                  Node.js
+                </div>
+                <div class="chip">
+                  Express
+                </div>
+                <div class="chip">
+                  Bootstrap
+                </div>
+                <div class="chip">
+                  Material UI
+                </div>
+                <div class="chip">
+                  Django
                 </div>
               </div>
-
-              <div class="col-md-6">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-user-group"></i></button>
-                    <h4><b>How to assign friends to items?</b></h4>
-                    <p class="card-text">
-                      When assigning friends to items for splitting the check, the users made the mistake of clicking on the item instead of the user icons, even though there is a message at the top that says “Select friends from your party”. This is likely because the items are at the top of the page, which draw the users’ attention first. 
-                    </p>
-                    <p>
-                      <strong>Solution</strong>: <br> We could move the “Your Party” section to the top of the page and put the items toward the bottom. This way, the users would be more likely to select the friends and assign them to items.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 mt-3">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-bowl-food"></i></button>
-                    <h4><b>How did Will get assigned to tacos?</b></h4>
-                    <p class="card-text">
-                      The users were confused why when they clicked on Will S., he is automatically assigned to tacos. This is expected as a limitation of our prototype, because we couldn’t implement real drag and drop in Figma. 
-                    </p>
-                    <p>
-                      <strong>Solution</strong>: <br> If we were to implement Orca as an actual app instead of a prototype, we would be able to address this issue by adding drag and drop functionality.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 mt-3">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-eye-slash"></i></button>
-                    <h4><b>I wonder how this feature would look?</b></h4>
-                    <p class="card-text">
-                      The users were curious about the features of the app that are not demonstrated on our prototype, such as how we were able to display the prices of items for a check. 
-                    </p>
-                    <p>
-                      <strong>Solution</strong>: <br> This is expected, since we’re not able to include every page in our prototype.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <h3 class="mt-4 subheader">Post-Test Questions and Response</h3>
-
-              <div class="col-md-6 mt-3">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-regular fa-face-angry"></i></button>
-                    <h4><b>What frustrated you the most about this app?</b></h4>
-                    <p class="card-text">
-                      <ul>
-                        <li>
-                          Nothing was really frustrating, everything is pretty straightforward. Although the ratio of images to text is slightly off.
-                        </li>
-                      </ul> 
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 mt-3">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-wand-magic-sparkles"></i></button>
-                    <h4><b>If you had a magic wand, how would you improve this app?</b></h4>
-                    <p class="card-text">
-                      <ul>
-                        <li>
-                          I would make it more fun to use by adding colors and rewards.
-                        </li>
-                        <li>
-                          I would make how to assign certain items from the receipt to people clearer.
-                        </li>
-                      </ul> 
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 mt-3">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-regular fa-face-laugh-beam"></i></button>
-                    <h4><b>What did you like about this app?</b></h4>
-                    <p class="card-text">
-                      <ul>
-                        <li>
-                          I liked how clear and simple the app was, and that it displayed my transactions as red or green depending on withdrawal or deposit.
-                        </li>
-                        <li>
-                          I like how there are two ways to split the bill, by item and evenly.
-                        </li>
-                        <li>
-                          I like how easy the app is to use!
-                        </li>
-                      </ul> 
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 mt-3">
-                <div class="card dark-bg h-100">
-                  <div class="card-body">
-                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
-                      autocomplete="off"><i class="fa-solid fa-sliders"></i></button>
-                    <h4><b>How likely are you to recommend this app to a friend or colleague, 0=Not at all likely, and 10=Very likely?</b></h4>
-                    <p class="card-text">
-                      <ul>
-                        <li>
-                          All 3 users responded 7 to this question <i class="fa-regular fa-face-surprise"></i>
-                        </li>
-                      </ul> 
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-
             </div>
 
-            
-          </div>
-
-          <div class="row">
-            <div class="col-md-12 mt-5">
-              <h3 id="conclusion" class="pb-4 mb-4 border-bottom">
-                Conclusion
-              </h3>
-              <p>In the end, our team tracked down Orca's official email (and connected with them on LinkedIn 😊) and sent an email with our work. As of this writing, we are currently awaiting their response!</p>
-              <p>Overall, we learned a lot about the design process. It was interesting to see what features seemed intuitive to us originally
-                that users struggled with. This project reminded us that when designing a site, even if you think something is really obvious and easy to use,
-                you were the person who designed it, so you know exactly how it should work. It was exciting to get feedback from real users who had never interacted with the app before and incorporate their 
-                feedback into a new improved design.
-    
-              </p>
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="pb-2 mb-2">
+                  Design
+                </h4>
+              </div>
+              <div class="col-md-12">
+                <div class="chip">
+                  Figma
+                </div>
+                <div class="chip">
+                  Canva
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -839,7 +369,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 d-flex justify-content-end align-items-start flex-column footer-mobile">
-            <p class="mb-1">UI/UX: Orca Iterative Design</p>
+            <p class="mb-1">Jubilated Panda Portfolio</p>
           </div>
         </div>
       </div>
@@ -866,8 +396,6 @@
       <!-- CITATION: https://trvswgnr.github.io/bs5-lightbox/ -->
       <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
 
-      <!-- import index.js in this directory -->
-      <script src="index.js"></script>
 </body>
 
 </html>
