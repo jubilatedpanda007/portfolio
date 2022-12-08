@@ -36,6 +36,70 @@ p {
     text-decoration: underline;
 }
 
+#essays {
+  color: #ed8936;
+  text-decoration: none;
+}
+
+/* on hover, add text decor */
+#essays:hover {
+    text-decoration: underline;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-text {
+    color: #eff1f5;
+}
+
+.card {
+    background-color: #000;
+    border: none;
+}
+
+.card:hover {
+    background-color: rgb(54, 54, 54);
+    transition: 0.5s;
+}
+
+.gradient-btn {
+    background: linear-gradient(60deg, rgb(237, 203, 54) 0%, rgb(236, 115, 74) 100%);
+    color: #fff;
+    /* make a glow effect */
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(60deg, #62b3ed  0%, #805ad5 100%);
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.75s;
+}
+
+.card-img-top {
+    border-radius: 0.5rem;
+    height: 500px;
+    width: 100%;
+}
+
+.card-body {
+  height: 215px;
+}
+
+.card {
+    margin: 1rem;
+}
+
+
+/* Old CSS */
+
 .section {
     padding: 2rem 0 7rem;
 }
@@ -270,7 +334,7 @@ button {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(rgb(30, 93, 219), rgb(59, 130, 246), rgb(147, 51, 234));
+    background: linear-gradient(#f66565, #c05763, #ed8936);
   }
 
   /* disable background on horiztonal scroll */
